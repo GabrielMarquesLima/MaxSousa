@@ -1,0 +1,291 @@
+main .containerTitulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -20px;
+}
+main .containerTitulo .titulo{
+    width: 248px;
+    height: 60px;
+}
+main .containerTitulo .subtitulo{
+    width: 720px;
+    height: 80px;
+    background-color: #262450;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+}
+main .containerTitulo .subtitulo h2{
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 19.25px;
+    font-weight: 400;
+}
+
+/*Inicio contato*/
+main .container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+main .container .esquerda{
+    width: 48vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main .container .esquerda > img{
+    margin: 0 0 0 -60px;
+}
+main .container .esquerda .bgContatos{
+    width: 370px;
+    height: 625px;
+    background-color: #1C1B33;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 27px;
+}
+main .container .esquerda > .bgContatos > #whatsApp{
+    margin-top: 40px;
+}
+main .container .esquerda > .bgContatos > .contatos > a > .redes{
+    width: 235px;
+    height: 58px;
+    background-color: #FFFCEE;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+}
+main .container .esquerda > .bgContatos > .contatos > a > .redes:hover{
+    transform: scale(1.05);
+}
+main .container .esquerda > .bgContatos > .contatos > a > .redes > .containerRedes{
+    display: flex;
+    column-gap: 15px;
+    padding-left: 17px;
+    align-items: center;
+}
+main .container .esquerda > .bgContatos > .contatos > a > .redes > .containerRedes > .texto > h2{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 23.786px;
+    font-weight: 400;
+}
+main .container .esquerda > .bgContatos > #blog{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main .container .esquerda > .bgContatos > #blog a > .redes{
+    border-radius: 15px 15px 0 0;
+}
+main .container .esquerda > .bgContatos > #blog .subCard{
+    width: 336px;
+    height: 48px;
+    border-radius: 7px;
+    background-color: #D1D0C9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .container .esquerda > .bgContatos > #blog .subCard h2{
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 19.821px;
+    font-weight: 400;
+}
+main .container .esquerda > .bgContatos > h2{
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 23.786px;
+    font-weight: 400;
+}
+main .container .esquerda > .bgContatos > .bgEmail{
+    width: 362px;
+    height: 102px;
+    border-radius: 15px;
+    background-color: #fffcee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 12px;
+}
+main .container .esquerda .bgContatos > .bgEmail > img{
+    margin-top: 8px;
+}
+main .container .esquerda > .bgContatos > .bgEmail > h2{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 17.179px;
+    font-weight: 400;
+}
+
+/*Parte direita*/
+main .container .direita{
+    width: 48vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 270px;
+    row-gap: 20px;
+}
+main .container .direita .texto{
+    width: 360px;
+    height: 52px;
+    border-radius: 9px;
+    background-color: #1C1B33;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+main .container .direita .texto h2{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 27.456px;
+    font-weight: 400;
+}
+main .container .direita .bgMapa{
+    width: 552px;
+    height: 365px;
+    border-radius: 6.6px;
+    background-color: #1C1B33;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .container > hr{
+    width: 0px;
+    height: 504px;
+    background-color: #1C1B33;
+    margin-top: 250px;
+}
+@media (max-width: 1360px){
+    main .container hr{
+        display: none;
+    }
+    main .container{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 80px;
+    }
+    main .container .esquerda{
+        width: 100vw;
+    }
+    main .container .direita{
+        width: 100vw;
+        margin: 0 0 150px 0;
+        row-gap: 20px;
+    }
+}
+
+@media (max-width: 800px){
+    main .containerTitulo .titulo{
+        width: 225px;
+        height: 60px;
+    }
+    main .containerTitulo .subtitulo{
+        width: 315px;
+        height: 95px;
+    }
+    main .container .esquerda > img{
+        width: 100vw;
+    }
+    main .container .direita{
+        row-gap: 20px;
+    }
+    main .container .direita .texto{
+        width: 270px;
+        height: 40px;
+        border-radius: 6.5px;
+    }
+    main .container .direita .texto > img{
+        width: 31px;
+        height: 31px;
+    }
+    main .container .direita .texto h2{
+        font-size: 20px;
+    }
+    main .container .direita .bgMapa{
+        width: 420px;
+        height: 280px;
+    }
+    main .container .direita .bgMapa > iframe{
+        width: 410px;
+        height: 270px;
+    }
+}
+
+@media (max-width: 429px){
+    main .containerTitulo .titulo{
+        width: 180px;
+        height: 44px;
+    }
+    main .containerTitulo .subtitulo{
+        width: 254px;
+        height: 78px;
+    }
+    main .containerTitulo .titulo h1{
+        font-size: 18px;
+        padding: 0;
+    }
+    main .containerTitulo .subtitulo h2{
+        font-size: 14px;
+        padding: 0 5px 0;
+    }
+    main .container .direita .bgMapa{
+        width: 250px;
+        height: 165px;
+    }
+    main .container .direita .bgMapa > iframe{
+        width: 240px;
+        height: 155px;
+    }
+    main .container .esquerda .bgContatos{
+        width: 100vw;
+        height: 520px;
+    }
+    main .container .esquerda .bgContatos > .contatos > a > .redes{
+        width: 178px;
+        height: 44px;
+        border-radius: 8px;
+    }
+    main .container .esquerda .bgContatos > .contatos > a > .redes > .containerRedes > img{
+        width: 30px;
+        height: 30px;
+    }
+    main .container .esquerda .bgContatos > .contatos > a > .redes > .containerRedes > .texto > h2{
+        font-size: 16px;
+    }
+    main .container .esquerda .bgContatos > #blog > a > .redes{
+        border-radius: 8px 8px 0 0;
+    }
+    main .container .esquerda .bgContatos > #blog > .subCard{
+        width: 254px;
+        height: 37px;
+        border-radius: 5px;
+    }
+    main .container .esquerda .bgContatos > #blog > .subCard > h2{
+        font-size: 15px;
+    }
+    main .container .esquerda .bgContatos > h2{
+        font-size: 18px;
+    }
+    main .container .esquerda .bgContatos .bgEmail{
+        width: 274px;
+        height: 77px;
+        border-radius: 10px;
+    }
+    main .container .esquerda .bgContatos .bgEmail > img{
+        width: 30px;
+        height: 30px;
+    }
+    main .container .esquerda .bgContatos .bgEmail > h2{
+        font-size: 13px;
+    }
+}

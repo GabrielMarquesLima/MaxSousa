@@ -1,0 +1,126 @@
+/*Começando estilização do Main na página contato*/
+main .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+main .container > .titulo{
+    width: 650px;
+}
+
+/*inicio serviços*/
+main .container .servicos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80vw;
+    margin-top: 80px;
+    row-gap: 80px;
+    column-gap: 75px;
+}
+main .container .servicos .icon{
+    width: 45px;
+    height: 45px;
+    background-color: #1C1B33;
+    border-radius: 7px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 -25px -20px;
+    position: relative;
+}
+main .container .servicos > .departamento > .card{
+    height: 355px;
+    width: 302px;
+    background-color: #1C1B33;
+    border-radius: 7px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+main .container .servicos > .departamento > .card > .imagem{
+    padding-top: 3px;
+}
+main .container .servicos > .departamento .card > .subtitulo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .container .servicos > .departamento > .card > .subtitulo > h2{
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20.607px;
+    font-weight: 400;
+    letter-spacing: 2.061px;
+}
+main .container .servicos .departamento .texto{
+    width: 302px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+main .container > .servicos .departamento .texto p{
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 18.031px;
+    font-weight: 400;
+    letter-spacing: 1.803px;
+    width: 280px;
+}
+@media (max-width: 1360px){
+    main .container .servicos{
+        width: 90vw;
+        column-gap: 200px;
+    }
+}
+@media (max-width: 800px){
+    main .container > .titulo{
+        width: 80vw;
+        max-width: 650px;
+    }
+}
+@media (max-width: 429px){
+    main .container > .titulo{
+        width: 95vw;
+        border-radius: 8px;
+    }
+    main .container > .titulo > h1{
+        font-size: 18px;
+        font-weight: 400;
+    }
+    main .container .servicos{
+        width: 100vw;
+    }
+    main .container .servicos .icon{
+        width: 35px;
+        height: 35px;
+    }
+    main .container .servicos .icon img{
+        width: 24px;
+        height: 24px;
+    }
+    main .container .servicos .departamento .card{
+        width: 235px;
+        height: 277px;
+    }
+    main .container .servicos .departamento .card .imagem img{
+        width: 230px;
+        height: 230px;
+    }
+    main .container .servicos .departamento .card .subtitulo > h2{
+        font-size: 16px;
+    }
+    main .container .servicos .departamento .texto{
+        width: 226px;
+    }
+    main .container .servicos .departamento .texto p{
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,362 @@
+* a{
+    text-decoration: none;
+}
+body{
+    background-color: #FFFCEE;;
+}
+
+header{
+    background-image: url('./img/imagemH.png');
+    width: 99,9vw;
+    height: 427px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: flex;
+
+}
+
+/*Background header*/
+
+header > nav{
+    padding: 27px 0 0 33px;
+}
+header nav .bgH{
+    width: 438px;
+    height: 75px;
+    border-radius: 10px;
+    background-color: rgba(255, 252, 238, 0.10);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*Logo do header*/
+header nav .bgH > .logoH{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #1C1B33;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.1s;
+}
+header nav .bgH > .logoH:hover{
+    scale: 1.1;
+}
+header nav .bgH > .logoH > li > img{
+    width: 37.50px;
+    height: 37.50px;
+}
+
+
+/*Opções do header*/
+header nav .bgH > .opcoes{
+    width: 278px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #1C1B33;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+header nav .bgH > .opcoes > li > hr{
+    stroke-width: 1px;
+    height: 32.5px;
+    color: #FFFCEE;
+}
+header nav .bgH > .opcoes > li > a > h3{
+    color: #FFFCEE;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    transition: 0.1s;
+}
+header nav .bgH > .opcoes > li > a > h3:hover{
+    scale: 1.05;
+}
+
+/*Main inicio*/
+main{
+    background-color: #FFFCEE;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    }
+main .titulo{
+    width: 750px;
+    height: 55px;
+    background-color: #1C1B33;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10px;
+}
+main .titulo > h1{
+    color: #FFFCEE;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 2.4px;
+}
+main .container .compromissoContainer > .compromisso{
+    background-color: #D9D9D9;
+    width: 1350px;
+    height: 280px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 50px;
+    margin-top: 50px;
+}
+main .container .compromissoContainer > .compromisso > .primeiro,
+main .container .compromissoContainer > .compromisso > .segundo,
+main .container .compromissoContainer > .compromisso > .terceiro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+}
+main .container .compromissoContainer > .compromisso  .texto{
+    width: 330px;
+}
+main .container .compromissoContainer > .compromisso  .texto > h1{
+    color: #1C1B33;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1.8px;
+}
+main .container .responsaveisContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main  .container .responsaveisContainer > h1{
+    color: #1C1B33;
+    font-family: Montserrat;
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 2.8px;
+    margin: 30px 0 50px 0;
+}
+main .container .responsaveisContainer > .responsaveis{
+    display: flex;
+    flex-direction: row;
+    column-gap: 180px;
+    justify-content: space-around;
+    row-gap: 50px;
+}
+main .container .responsaveisContainer > .responsaveis > .arianaCard,
+main .container .responsaveisContainer > .responsaveis > .daianyCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    column-gap: 15px;
+}
+main .container .responsaveisContainer > .responsaveis > .arianaCard > .ariana,
+main .container .responsaveisContainer > .responsaveis > .daianyCard > .daiany{
+    width: 200px;
+    height: 235px;
+    background-color: #D9D9D9;
+}
+main .container .responsaveisContainer > .responsaveis .arianaCard > .arianaTexto,
+main .container .responsaveisContainer > .responsaveis .daianyCard > .daianyTexto{
+    width: 240px;
+    height: 45px;
+    background-color: #D9D9D9;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .container .responsaveisContainer > .responsaveis > .arianaCard > .arianaTexto > h2,
+main .container .responsaveisContainer > .responsaveis > .daianyCard > .daianyTexto > h2{
+    color: #1C1B33;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1.8px;
+}
+/*Footer inicio*/
+
+footer{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+footer .rodape{
+    background-image: url(./img/fundoRodape.png);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    width: 835px;
+    height: 90px;
+    border-radius: 20px;
+    background-color: #D9D9D9;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+}
+footer .rodape .logos{
+    display: flex;
+    flex-direction: row;
+    column-gap: 100px;
+    justify-content: center;
+    align-items: center;
+}
+footer .rodape .texto > h2{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.2px;
+}
+
+@media (max-width: 1360px){
+/*Header*/
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    header > nav{
+        padding: 15px 0 0 0;
+    }
+    header nav .bgH{
+        width: 345px;
+        height: 75px;
+    }
+/*Main*/
+    main .titulo{
+        width: 590px;
+    }
+    main .titulo > h1{
+        font-size:18px;
+    }
+    main .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100vw;
+    }
+    main .container .compromissoContainer{
+        width: 50vw;
+        display: flex;
+        justify-content: center;
+    }
+    main .container .compromissoContainer > .compromisso{
+        width: 345px;
+        height: 850px;
+        flex-direction: column;
+    }
+    main .container .compromissoContainer > .compromisso > .texto{
+        width: 300px;
+    }
+    main .container .responsaveisContainer{
+        width: 50vw;
+        display: flex;
+        align-items: center;
+    }
+    main .container .responsaveisContainer h1{
+        font-size: 18px;
+    }
+    main .container .responsaveisContainer .responsaveis{
+        flex-direction: column;
+    }
+    main .container .responsaveisContainer .responsaveis .arianaCard,
+    main .container .responsaveisContainer .responsaveis .daianyCard{
+        row-gap: 15px;
+    }
+
+/*Footer*/
+    footer .rodape{
+        width: 100vw;
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 800px){
+    header > nav > .bgH{
+        width: 315px;
+    }
+    header nav .bgH > .opcoes{
+        width: 225px;
+        height: 50px;
+    }
+
+/*Main*/
+    main .titulo{
+        width: 100vw;
+        height: 70px;
+    }
+    main .titulo > h1{
+        padding: 0 20px 0 20px;
+        text-align: center;
+    }
+    main .container{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 429px){
+    header{
+        background-image: url(./img/imagemHCelular.png);
+        height: 380px;
+    }
+    header > nav{
+        padding: 0;
+    }
+    header nav > .bgH{
+        width: 100vw;
+        height: 50px;
+        border-radius: 0;
+    }
+    header > nav > .bgH > .logoH{
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+    }
+    header > nav > .bgH > .logoH > li > img{
+        width: 30px;
+        height: 30px;
+    }
+    header > nav > .bgH > .opcoes{
+        width: 200px;
+        height: 40px;
+        border-radius: 10px;
+    }
+/*Main*/
+
+    main .container .compromissoContainer .compromisso{
+        width: 90vw;
+    }
+    main .container .compromissoContainer > .compromisso .texto{
+        width: 90vw;
+    }
+}
